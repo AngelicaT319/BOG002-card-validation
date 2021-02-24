@@ -198,6 +198,8 @@ dos métodos (`isValid` y `maskify`):
 con el número de tarjeta que se va a verificar. Esta función debe retornar un
 `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
 
+
+
 * **`validator.maskify(creditCardNumber)`**: `creditCardNumber` es un `string` con
 el número de tarjeta y esta función debe retornar un `string` donde todos menos
 los últimos cuatro caracteres sean reemplazados por un numeral (`#`) o 🐱.

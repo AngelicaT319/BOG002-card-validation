@@ -7,7 +7,14 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <form action="">
+        <input id="card_number" pattern="[0-9]{15,16}" maxlength="16">        
+    </form>
+    <button id="buttonValidar">Validar</button>
+    <p id="resultvalid">Su tarjeta con es:</p>
+    <p id="replace">No Tarjeta</p>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
