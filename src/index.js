@@ -25,7 +25,7 @@ function showMessage(resultValidation) {
   if (resultValidation) {
     resultHTML.innerHTML = `Su tarjeta N° ${number_mask} es valida`;
   } else {
-    document.getElementById(
+    
         resultHTML.innerHTML = `Su tarjeta N° ${number_mask} es invalida`;
   }
 }
