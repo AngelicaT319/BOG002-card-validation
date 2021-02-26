@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:violet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+header{
+    height: 320px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px ;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: white;  
+    margin-bottom: 100px;
+    box-shadow: 0px 20px 28px rgba(0, 0, 0, 0.541);
+    position: relative;
+}
+.subcontainer{
+    width: 370px;
+    font-weight: 700;
+}
+.subcontainer div{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.form-container p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.input_card-number{
+    width: 100%;
+    height: 25px;
+    border: 1.5px solid rgba(134, 134, 134, 0.726);
+    border-radius: 5px;
+    outline: none;
+}
+
+.verification{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.verification div{
+    margin: 0;
+    width: fit-content;
+}
+.verification select{
+    padding: 6px 0px;
+    border: 1.5px solid rgba(134, 134, 134, 0.726);
+    border-radius: 5px;
+}
+.verification input{
+    width: 50px;
+    height: 25px;
+    border: 1.5px solid rgba(134, 134, 134, 0.726);
+    border-radius: 5px;
+}
+.valid-button{
+    width: 100%;
+    height:40px;
+    border-radius: 10px;
+    border: 1px solid rgba(134, 134, 134, 0.726);
+    background-color: #554471;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+.valid-button:active{
+    width: 99%;
+    height:39px;
+}
+.valid-button:hover{
+    background-color: #605375;
+}
+.card-plastic{
+    box-sizing:border-box ;
+    background-image: url("https://i.pinimg.com/564x/76/9f/3a/769f3a0508d4fc0866f06b3a45162ac6.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    top:-130px;  
+    border-radius:10px; 
+    padding-left: 30px;
+    
+}
+.card-plastic_img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-chip{
+    width:60px;
+    height:50px;
+    margin-top: 50px;
+}
+.card-type{
+    width: 85px;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.card-plastic #number-plastic{
+    font-family: 'Saira', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    width: fit-content;
+}
+.card-plastic #name-plastic{
+    font-family: 'Saira', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    width: fit-content;
+}
