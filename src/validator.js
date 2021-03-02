@@ -1,4 +1,4 @@
-let validator = {
+let validator = {  
   isValid: function (cardnum) {
     //divide el numero por digitos y lo almacena en un array de strings, con map lo transforma en array de numeros
     let char = cardnum.split("").map(Number);
@@ -40,8 +40,7 @@ let validator = {
       const regexp = /.(?=.{4})/g;
       const substr = "#";
       return cardnum.replace(regexp, substr);
-    }
-    else{
+    } else {
       return cardnum;
     }
   },

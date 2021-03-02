@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:violet;
+    background-image:linear-gradient(-120deg,#025891bb,#731cbab9);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -17,16 +17,17 @@ main{
 }
 .form-container{
     box-sizing: border-box;
-    border-radius: 10px;
+    border: 5px solid rgba(116, 113, 113, 0.021);
+    border-radius: 25px;
     height: 500px;
     width: 500px ;
     padding-top: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;  
-    background-color: white;  
+    background-color:rgba(255, 255, 255, 0.466);  
     margin-bottom: 100px;
-    box-shadow: 0px 20px 28px rgba(0, 0, 0, 0.541);
+    box-shadow: -25px 28px 10px -1px rgba(0, 0, 0, 0.15);
     position: relative;
 }
 .subcontainer{
@@ -40,13 +41,14 @@ main{
 .form-container p{
     margin: 0;
     margin-bottom: 5px;
+    color: rgba(41, 41, 41, 0.767);
 }
 
 .input_card-number{
     width: 100%;
-    height: 25px;
+    height: 35px;
     border: 1.5px solid rgba(134, 134, 134, 0.726);
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
 }
 
@@ -60,20 +62,21 @@ main{
     width: fit-content;
 }
 .verification select{
-    padding: 6px 0px;
+    padding: 10px 0px;
     border: 1.5px solid rgba(134, 134, 134, 0.726);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .verification input{
     width: 50px;
-    height: 25px;
+    height: 30px;
     border: 1.5px solid rgba(134, 134, 134, 0.726);
-    border-radius: 5px;
+    border-radius: 10px;
+    outline: none;
 }
 .valid-button{
     width: 100%;
     height:40px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid rgba(134, 134, 134, 0.726);
     background-color: #554471;
     color: white;
@@ -95,45 +98,89 @@ main{
     background-size: cover;
     background-repeat: none;
     background-position: center;
-    width: 450px;
+    width: 420px;
     height: 250px;
     position: absolute;
     top:-130px;  
-    border-radius:10px; 
-    padding-left: 30px;
-    
+    border-radius:25px; 
+    padding: 30px;    
+    box-shadow: -10px 20px 10px -1px rgba(0, 0, 0, 0.15);
 }
-.card-plastic_img{
-    width: 100%;
+.title-plastic{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 8px;
+}
+.title-plastic div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.title-plastic img{
+    width: 200px;
+    height: 30px;
+}
+.card-plastic .bank-text{
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.card-plastic .credito-text{
+    width: 45px;
+    color: white;
+    font-size: 12px;
 }
 .card-chip{
-    width:60px;
-    height:50px;
-    margin-top: 50px;
+    margin-left: 30px;
+    width:50px;
+    height:40px;
 }
 .card-type{
     width: 85px;
     height: 50px;
-    margin-top: 15px;
-    margin-right: 15px;
+    align-self: flex-end;
 }
 .card-plastic #number-plastic{
     font-family: 'Saira', sans-serif;
-    margin-top: 40px;
-    margin-bottom: 18px;
+    margin-top: 20px;
     color: white;
     letter-spacing: 1px;
     font-size: 24px;
     font-weight: 600;
-    width: fit-content;
+    width: 350px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-shadow:  1px 1px 4px black, -1px 1px 1px black;
 }
 .card-plastic #name-plastic{
     font-family: 'Saira', sans-serif;
+    text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    width: fit-content;
+    width: 250px;   
+    margin-left: 10px; 
+    text-shadow:  1px 1px 4px black, -1px 1px 1px black;
+}
+.name-card_section{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.name-card_section div{
+    margin: 0;
+    height: 80px;
+}
+.valid-thru{
+    width: 45px;
+    color: white;
+    font-size: 10px;
 }

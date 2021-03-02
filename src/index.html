@@ -15,17 +15,30 @@
     <main>
       <div class="form-container">
         <div class="card-plastic">
-          <div class="card-plastic_img">
-            <img class="card-chip" src="/chip-tarjeta.png" alt="chip tarjeta" />
+          <div class="title-plastic">
+            <div>
+              <img src="/logo_lab.png" alt="logo de laboratoria bank" /><span
+                class="bank-text"
+                >Bank</span
+              >
+            </div>
+            <span class="credito-text">Credito Ideal</span>
+          </div>
+          <img class="card-chip" src="/chip-tarjeta.png" alt="chip tarjeta" />
+          <p id="number-plastic"></p>
+          <div class="name-card_section">
+            <div>
+              <span class="valid-thru">VALID THRU</span>
+              <p id="name-plastic"></p>
+            </div>
             <img
               class="card-type"
               src="/mastercard.png"
               alt="franquicia tarjeta"
             />
           </div>
-          <p id="number-plastic"></p>
-          <p id="name-plastic"></p>
         </div>
+
         <div class="subcontainer">
           <div>
             <p>Numero de Tarjeta</p>
@@ -34,9 +47,11 @@
                 class="input_card-number"
                 id="card_number"
                 pattern="[0-9]{15,16}"
+                placeholder="Solo caracteres numericos"
                 maxlength="16"
               />
             </form>
+            <p id="validchar"></p>
           </div>
           <div>
             <p>Nombre Titular de la tarjeta</p>
