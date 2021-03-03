@@ -27,9 +27,9 @@
           <img class="card-chip" src="/chip-tarjeta.png" alt="chip tarjeta" />
           <p id="number-plastic"></p>
           <div class="name-card_section">
-            <div>
-              <span class="valid-thru">VALID THRU</span>
+            <div class="">
               <p id="name-plastic"></p>
+              <span class="valid-thru">VALID THRU</span>
             </div>
             <img
               class="card-type"
@@ -46,12 +46,11 @@
               <input
                 class="input_card-number"
                 id="card_number"
-                pattern="[0-9]{15,16}"
+                type="text"
                 placeholder="Solo caracteres numericos"
                 maxlength="16"
               />
             </form>
-            <p id="validchar"></p>
           </div>
           <div>
             <p>Nombre Titular de la tarjeta</p>

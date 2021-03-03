@@ -4,11 +4,13 @@ let cardNumber;
 let number_mask;
 let inputValue;
 
-/* document.getElementById("card_number").addEventListener("change", (event) => {
-   cardNumber = event.target.value
+/* document.getElementById("card_number").addEventListener("keypress", (event) => {
+  return (event.code >= 48 && event.code <= 57)
+
 }); */
 
 document.getElementById("card_number").addEventListener("keyup", (event) => {
+  cardNumber = event.target.value;
   cardNumber = event.target.value;
   let regexp_letras = /\D/g;
   let regexp_blank = /\s/g;
@@ -19,8 +21,7 @@ document.getElementById("card_number").addEventListener("keyup", (event) => {
 
 });
 
-document.getElementById("buttonValidar").addEventListener("click", () => {  
-  console.log(inputValue.value);
+document.getElementById("buttonValidar").addEventListener("click", () => { 
   const isValid = validator.isValid(inputValue.value);
   showMessage(isValid);
 });
@@ -39,4 +40,4 @@ function showMessage(resultValidation) {
     resultHTML.innerHTML = `Su tarjeta es invalida`;
   }
 }
-console.log(validator);
+/* console.log(validator); */
