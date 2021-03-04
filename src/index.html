@@ -14,6 +14,7 @@
     <header></header>
     <main>
       <div class="form-container">
+        <!-- tarjeta de credito plastico en pantalla -->
         <div class="card-plastic">
           <div class="title-plastic">
             <div>
@@ -27,10 +28,12 @@
           <img class="card-chip" src="/chip-tarjeta.png" alt="chip tarjeta" />
           <p id="number-plastic"></p>
           <div class="name-card_section">
-            <div class="">
+            <div class="name-card_section__valid">
+              <div id="expire-date">
+                <span class="valid-thru">VALID THRU</span>
+              </div> 
               <p id="name-plastic"></p>
-              <span class="valid-thru">VALID THRU</span>
-            </div>
+            </div>  
             <img
               class="card-type"
               src="/mastercard.png"
@@ -39,6 +42,7 @@
           </div>
         </div>
 
+        <!--Formulario numero de tarjeta, nombre de usuario, etc --> 
         <div class="subcontainer">
           <div>
             <p>Numero de Tarjeta</p>
@@ -61,29 +65,11 @@
           <div class="verification">
             <div>
               <p>Fecha de Expiración</p>
-              <select name="" id="">
-                <option value="">Ene</option>
-                <option value="">Feb</option>
-                <option value="">Mar</option>
-                <option value="">Abr</option>
-                <option value="">May</option>
-                <option value="">Jun</option>
-                <option value="">Jul</option>
-                <option value="">Ago</option>
-                <option value="">Sept</option>
-                <option value="">Oct</option>
-                <option value="">Nov</option>
-                <option value="">Dic</option>
+              <select name="" id="month-select">
+                <option value=""></option>
               </select>
-              <select name="" id="">
-                <option value="">2021</option>
-                <option value="">2022</option>
-                <option value="">2023</option>
-                <option value="">2024</option>
-                <option value="">2025</option>
-                <option value="">2026</option>
-                <option value="">2027</option>
-                <option value="">2028</option>
+              <select name="" id="year-select">
+                <option value=""></option>
               </select>
             </div>
             <div>
@@ -96,6 +82,7 @@
           <p id="resultvalid"></p>
         </div>
       </div>
+      
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>

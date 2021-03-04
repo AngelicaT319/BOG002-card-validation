@@ -4,11 +4,7 @@ let cardNumber;
 let number_mask;
 let inputValue;
 
-/* document.getElementById("card_number").addEventListener("keypress", (event) => {
-  return (event.code >= 48 && event.code <= 57)
-
-}); */
-
+//depuracion de numero de tarjeta para eliminar letras y char especiales. Enmascarar primeros 12 numeros
 document.getElementById("card_number").addEventListener("keyup", (event) => {
   cardNumber = event.target.value;
   cardNumber = event.target.value;
@@ -21,6 +17,7 @@ document.getElementById("card_number").addEventListener("keyup", (event) => {
 
 });
 
+//Validacion de numero de tarjeta de credito
 document.getElementById("buttonValidar").addEventListener("click", () => { 
   const isValid = validator.isValid(inputValue.value);
   showMessage(isValid);
@@ -32,6 +29,7 @@ document.getElementById("card_name").addEventListener("keyup", (event) => {
   document.getElementById("name-plastic").innerHTML = cardName;
 });
 
+//Muestra un display de numero de tarjeta valido o invalido
 function showMessage(resultValidation) {
   const resultHTML = document.getElementById("resultvalid");
   if (resultValidation) {
@@ -40,4 +38,46 @@ function showMessage(resultValidation) {
     resultHTML.innerHTML = `Su tarjeta es invalida`;
   }
 }
+
+//Agregar los options de meses y años en el select de la fecha de expiración
+//Meses del año
+const monthSelect = document.querySelector("#month-select")
+for(let i = 1;i <= 12;i++){
+  const monthOptions = document.createElement("option");
+  monthOptions.textContent = i;
+  monthSelect.appendChild(monthOptions);  
+}
+//Años de vencimiento
+const yearSelect = document.querySelector("#year-select")
+let currentYear = new Date().getFullYear()
+currentYear = Number(String(currentYear).substr(2,2));
+for(let i = currentYear;i <= (currentYear+7);i++){
+  const yearOptions = document.createElement("option");
+  yearOptions.textContent = i;
+  yearSelect.appendChild(yearOptions);  
+}
+
+//agregar fecha de vencimiento en el plastico en pantalla
+
+//Mes
+const expireDateContainer = document.querySelector("#expire-date")
+const expireParrafo1 = document.createElement("p");
+document.querySelector("#month-select").addEventListener("change",(event)=>{
+    let selectMonthValue = event.target.value;
+    expireParrafo1.innerHTML = selectMonthValue; 
+});
+expireParrafo1.setAttribute("id","month-parrafo");
+expireDateContainer.appendChild(expireParrafo1);
+
+//Año
+const expireParrafo2 = document.createElement("p");
+document.querySelector("#year-select").addEventListener("change",(event)=>{
+    let selectYearValue = event.target.value;
+    expireParrafo2.innerHTML = selectYearValue; 
+});
+
+expireParrafo2.setAttribute("id","year-parrafo");
+expireDateContainer.appendChild(expireParrafo2);
+
+
 /* console.log(validator); */
