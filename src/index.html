@@ -13,7 +13,8 @@
   <body>
     <header></header>
     <main>
-      <div class="form-container">
+      <section class="form-section">
+        <div class="form-container">
         <!-- tarjeta de credito plastico en pantalla -->
         <div class="card-plastic">
           <div class="title-plastic">
@@ -31,9 +32,9 @@
             <div class="name-card_section__valid">
               <div id="expire-date">
                 <span class="valid-thru">VALID THRU</span>
-              </div> 
+              </div>
               <p id="name-plastic"></p>
-            </div>  
+            </div>
             <img
               class="card-type"
               src="/mastercard.png"
@@ -42,7 +43,7 @@
           </div>
         </div>
 
-        <!--Formulario numero de tarjeta, nombre de usuario, etc --> 
+        <!--Formulario numero de tarjeta, nombre de usuario, etc -->
         <div class="subcontainer">
           <div>
             <p>Numero de Tarjeta</p>
@@ -57,7 +58,7 @@
             </form>
           </div>
           <div>
-            <p>Nombre Titular de la tarjeta</p>
+            <p>Nombre del Titular</p>
             <form>
               <input id="card_name" class="input_card-number" />
             </form>
@@ -66,10 +67,10 @@
             <div>
               <p>Fecha de Expiración</p>
               <select name="" id="month-select">
-                <option value=""></option>
+                <option value="">Mes</option>
               </select>
               <select name="" id="year-select">
-                <option value=""></option>
+                <option value="">Año</option>
               </select>
             </div>
             <div>
@@ -77,13 +78,17 @@
               <input type="text" />
             </div>
           </div>
-
-          <button class="valid-button" id="buttonValidar">VALIDAR</button>
-          <p id="resultvalid"></p>
+          <!-- Boton para ejecutar funcion validator.IsValid y cambio de pantalla -->
+          <button class="valid-button" id="buttonPagar">Pagar</button>          
         </div>
       </div>
-      
+      </section>      
     </main>
+    <div class="validationPopup">
+      <img id="validationImage" src="https://www.flaticon.es/svg/vstatic/svg/753/753345.svg?token=exp=1614900090~hmac=1702a61fec7fa4d23040bdc1c7617bab" alt="">
+      <p id="resultvalid">prueba</p>      
+      <button class="aceptar-button" id="buttonAceptar">Cerrar</button>
+    </div>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>

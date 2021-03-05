@@ -18,10 +18,19 @@ document.getElementById("card_number").addEventListener("keyup", (event) => {
 });
 
 //Validacion de numero de tarjeta de credito
-document.getElementById("buttonValidar").addEventListener("click", () => { 
+document.getElementById("buttonPagar").addEventListener("click", () => {   
   const isValid = validator.isValid(inputValue.value);
-  showMessage(isValid);
+  showMessage(isValid);  
 });
+
+document.getElementById("buttonAceptar").addEventListener("click", () => {  
+  blurEffect();
+});
+
+function blurEffect(){  
+  document.querySelector("main").classList.toggle("blur")
+  document.querySelector(".validationPopup").classList.toggle("blur")
+}
 
 //funcion que reemplaza/inserta el nombre ingresado en el input en el plastico en pantalla
 document.getElementById("card_name").addEventListener("keyup", (event) => {
@@ -33,9 +42,12 @@ document.getElementById("card_name").addEventListener("keyup", (event) => {
 function showMessage(resultValidation) {
   const resultHTML = document.getElementById("resultvalid");
   if (resultValidation) {
-    resultHTML.innerHTML = `Su tarjeta es valida`;
+    document.querySelector("#validationImage").setAttribute("src", "https://www.flaticon.es/svg/vstatic/svg/753/753318.svg?token=exp=1614905694~hmac=de42b5765bcf742279e9aa16ca3bef76")
+    resultHTML.innerHTML = `¡Gracias por su Compra!`;
+    blurEffect();  
   } else {
-    resultHTML.innerHTML = `Su tarjeta es invalida`;
+      resultHTML.innerHTML = `Su tarjeta es invalida`;
+      blurEffect();      
   }
 }
 
@@ -78,6 +90,8 @@ document.querySelector("#year-select").addEventListener("change",(event)=>{
 
 expireParrafo2.setAttribute("id","year-parrafo");
 expireDateContainer.appendChild(expireParrafo2);
+
+
 
 
 /* console.log(validator); */
