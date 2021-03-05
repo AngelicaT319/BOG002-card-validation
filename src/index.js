@@ -46,6 +46,7 @@ function showMessage(resultValidation) {
     resultHTML.innerHTML = `¡Gracias por su Compra!`;
     blurEffect();  
   } else {
+      document.querySelector("#validationImage").setAttribute("src", "https://www.flaticon.es/svg/vstatic/svg/753/753345.svg?token=exp=1614900090~hmac=1702a61fec7fa4d23040bdc1c7617bab");
       resultHTML.innerHTML = `Su tarjeta es invalida`;
       blurEffect();      
   }
