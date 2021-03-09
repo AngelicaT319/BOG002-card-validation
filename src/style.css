@@ -7,24 +7,24 @@ body {
   font-size: 14px;
 }
 header {
-    background-color:black;
+    background-color: black;
   padding: 5px;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
+   text-align: center;  
   
  }
 
- .membresia { 
-   float: right;
+ .membresia {    
+   text-align: center;  
    color: white;   
-   font-size: 30px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-size: 40px;
+   font-family: Arial, Helvetica, sans-serif;     
    
  }
 
- .log{ 
-     margin-bottom: 20px;
-     margin-left: 10px;
-     margin-top: 10px;
+ .log{    
+     margin-bottom: 10px;
+     margin-top: 0px;
      max-height: 100px;
    max-width: 100px; 
 
