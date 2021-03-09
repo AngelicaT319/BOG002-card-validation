@@ -8,6 +8,7 @@ Los usuarios son personas que desean finalizar la compra de un producto X median
 los cuales deberan ingresar los datos requeridos para saber si se cumplen los parametros para validar su compra.
 
 El producto solucionara la duda del usuario de si su tarjeta es valida o no para la adquisicion de su producto.
+https://www.figma.com/file/7U0t2D18zjzqupsd4c8KeP/Untitled?node-id=0%3A1
 
 
 
