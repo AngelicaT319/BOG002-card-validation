@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-image: linear-gradient(-120deg, #025891bb, #731cbab9); */
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+header {
+  box-sizing: border-box;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 180px;
+  padding: 20px;
+  padding-left: 40px;
+}
+.membresia {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.membresia p{
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+}
+
+.log {
+  margin-top: 0px;
+  max-height: 80px;
+  max-width: 80px;
+}
+.why-membership{
+  display: flex;
+  justify-content: center;
+  background-image: url(./img/anime_background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.why-membership div{
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.726);
+  width: 60%;
+}
+.why-membership h2{
+  font-size: 26px;
+}
+.why-membership p{
+  font-weight: bold;
+  font-size: 16px;
+}
+.membership-options{
+  display: grid;
+  grid-template-columns: repeat(2,250px);
+  grid-template-rows: repeat(2,250px);
+  gap: 80px;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(./img/background_texture_anime.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.membership-options .structure{
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+.membership-options a button{
+  cursor: pointer;
+}
+.membership-options .structure div{
+  margin-bottom: 20px;
+}
+.title-membership {
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+}
+.title-membership.basic{
+  background-color: gray;
+}
+.title-membership.prm{
+  background-color: orangered;
+}
+.title-membership h2{
+  margin: 0;
+  padding: 5px;
+  color: white;
+}
+.membership-options .structure button{
+  height: 30px;
+  width: 80px;
+  border-radius:5px;
+  background-color: goldenrod;
+}
+.basicMonth-membership , .basicYearly-membership{     
+  background-color: rgba(128, 128, 128, 0.808)
+}
+
+.premiumMonthly-membership, .premiumYearly-membership{
+  background-color: rgba(255, 255, 255, 0.801);
+}
+.form-section {
+  height: 612px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  background-image: url(./img/anime_background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.form-container {
+  box-sizing: border-box;
+  border: 5px solid rgba(116, 113, 113, 0.021);
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.822);
+  box-shadow: -25px 28px 10px -1px rgba(0, 0, 0, 0.15);
+  bottom: 0;
+}
+.subcontainer {
+  width: 370px;
+  font-weight: 700;
+}
+.subcontainer div {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.form-container p {
+  margin: 0;
+  margin-bottom: 5px;
+  color: rgba(41, 41, 41, 0.767);
+}
+
+.input_card-number {
+  width: 100%;
+  height: 35px;
+  border: 1.5px solid rgba(134, 134, 134, 0.726);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 12px;
+}
+
+.verification {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.verification div {
+  margin: 0;
+  width: fit-content;
+}
+.verification select {
+  padding: 10px 0px;
+  border: 1.5px solid rgba(134, 134, 134, 0.726);
+  border-radius: 10px;
+}
+.verification input {
+  width: 50px;
+  height: 30px;
+  border: 1.5px solid rgba(134, 134, 134, 0.726);
+  border-radius: 10px;
+  outline: none;
+}
+.valid-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 134, 134, 0.726);
+  background-color: #554471;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+.valid-button:active {
+  width: 99%;
+  height: 39px;
+}
+.valid-button:hover {
+  background-color: #605375;
+}
+.card-plastic {
+  box-sizing: border-box;
+  background-image: url("https://i.pinimg.com/564x/76/9f/3a/769f3a0508d4fc0866f06b3a45162ac6.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  width: 420px;
+  height: 250px;
+  position: absolute;
+  top: 5px;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: -10px 20px 10px -1px rgba(0, 0, 0, 0.486);
+  border: 4px solid white;
+}
+.title-plastic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.title-plastic div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title-plastic img {
+  width: 200px;
+  height: 30px;
+}
+.card-plastic .bank-text {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+.card-plastic .credito-text {
+  width: 45px;
+  color: white;
+  font-size: 12px;
+}
+.card-chip {
+  margin-left: 30px;
+  width: 50px;
+  height: 40px;
+}
+.card-type {
+  width: 85px;
+  height: 50px;
+  align-self: flex-end;
+}
+.card-plastic #number-plastic {
+  font-family: "Saira", sans-serif;
+  margin-top: 20px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 350px;
+  height: 30px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px black, -1px 1px 1px black;
+}
+.card-plastic #name-plastic {
+  font-family: "Saira", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 200px;
+  margin-left: 10px;
+  text-shadow: 1px 1px 4px black, -1px 1px 1px black;
+}
+.name-card_section {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name-card_section__valid {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.valid-thru {
+  width: 30px;
+  color: white;
+  font-size: 8px;
+  margin-right: 5px;
+}
+div #expire-date {
+  display: flex;
+  align-items: flex-end;
+}
+#month-parrafo {
+  color: white;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+#year-parrafo {
+  color: white;
+  padding-left: 5px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#month-parrafo::after {
+  content: " /";
+}
+main.blur {
+  filter: blur(20px);
+  pointer-events: none;
+}
+.validationPopup {
+  box-sizing: border-box;
+  position: fixed;
+  top: 34%;
+  left: 35%;
+  width: 400px;
+  height: 230px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+p#resultvalid {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 60px 0 0 0;
+}
+
+.validationPopup img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top:-65px;
+}
+.aceptar-button {
+  width: 40%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(134, 134, 134, 0.726);
+  background-color: #554471;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+.validationPopup.blur {
+  visibility: visible;
+  opacity: 1;
+}
+
+footer {
+  background-color: black;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}

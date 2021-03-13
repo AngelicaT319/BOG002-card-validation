@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!--Encabezado-->
+    <header>
+      <div class="membresia">
+        <img src="img/lottra2.jpg" alt="logo" class="log" />
+        <p>Lottora AnimeShop</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <div class="form-container">
+          <!-- tarjeta de credito plastico en pantalla -->
+          <div class="card-plastic">
+            <div class="title-plastic">
+              <div>
+                <img src="img/logo_lab.png" alt="logo de laboratoria bank"/>
+                <span class="bank-text">Bank</span>
+              </div>
+              <span class="credito-text">Credito Ideal</span>
+            </div>
+            <img
+              class="card-chip"
+              src="img/chip-tarjeta.png"
+              alt="chip tarjeta"
+            />
+            <p id="number-plastic"></p>
+            <div class="name-card_section">
+              <div class="name-card_section__valid">
+                <div id="expire-date">
+                  <span class="valid-thru">VALID THRU</span>
+                </div>
+                <p id="name-plastic"></p>
+              </div>
+              <img
+                class="card-type"
+                src="img/mastercard.png"
+                alt="franquicia tarjeta"
+              />
+            </div>
+          </div>
+
+          <!--Formulario numero de tarjeta, nombre de usuario, etc -->
+          <div class="subcontainer">
+            <div>
+              <p>Numero de Tarjeta</p>
+              <form>
+                <input
+                  class="input_card-number"
+                  id="card_number"
+                  type="text"
+                  placeholder="Solo caracteres numericos"
+                  maxlength="16"
+                />
+              </form>
+            </div>
+            <div>
+              <p>Nombre del Titular</p>
+              <form>
+                <input id="card_name" class="input_card-number" />
+              </form>
+            </div>
+            <div class="verification">
+              <div>
+                <p>Fecha de Expiración</p>
+                <select name="" id="month-select">
+                  <option value="">Mes</option>
+                </select>
+                <select name="" id="year-select">
+                  <option value="">Año</option>
+                </select>
+              </div>
+              <div>
+                <p>CCV</p>
+                <input type="text" maxlength="3" />
+              </div>
+            </div>
+
+            <!-- Boton para ejecutar funcion validator.IsValid y cambio de pantalla -->
+            <button class="valid-button" id="buttonPagar">Pagar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="validationPopup">
+      <img id="validationImage" src="" alt="" />
+      <p id="resultvalid">prueba</p>
+      <button class="aceptar-button" id="buttonAceptar">Cerrar</button>
+    </div>
+    <!--Pie-->
+    <footer>Creado por Alejandra Perez y Angelica Theran 2021 &copy;</footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

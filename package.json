@@ -22,5 +22,18 @@
     "jest": "^26.6.1",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "* [1. Preámbulo](#1-preámbulo)\r * [2. Resumen del proyecto](#2-resumen-del-proyecto)\r * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)\r * [4. Consideraciones generales](#4-consideraciones-generales)\r * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)\r * [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelitaT319/BOG002-card-validation.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/AngelitaT319/BOG002-card-validation/issues"
+  },
+  "homepage": "https://github.com/AngelitaT319/BOG002-card-validation#readme"
 }
