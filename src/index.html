@@ -9,17 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--Encabezado-->
     <header>
       <div class="membresia">
-       <p>Lottora AnimeShop</p>  
-      </div> 
-      <div>      
-       <img src="img/lottra2.jpg" alt="logo" class="log"/> 
-      </div>       
-        </header>
+        <img src="img/lottra2.jpg" alt="logo" class="log" />
+        <p>Lottora AnimeShop</p>
+      </div>
+    </header>
 
     <main>
       <section class="form-section">
@@ -28,10 +31,8 @@
           <div class="card-plastic">
             <div class="title-plastic">
               <div>
-                <img
-                  src="img/logo_lab.png"
-                  alt="logo de laboratoria bank"
-                /><span class="bank-text">Bank</span>
+                <img src="img/logo_lab.png" alt="logo de laboratoria bank"/>
+                <span class="bank-text">Bank</span>
               </div>
               <span class="credito-text">Credito Ideal</span>
             </div>
@@ -58,7 +59,6 @@
 
           <!--Formulario numero de tarjeta, nombre de usuario, etc -->
           <div class="subcontainer">
-
             <div>
               <p>Numero de Tarjeta</p>
               <form>
@@ -95,25 +95,18 @@
 
             <!-- Boton para ejecutar funcion validator.IsValid y cambio de pantalla -->
             <button class="valid-button" id="buttonPagar">Pagar</button>
-
           </div>
         </div>
       </section>
     </main>
 
     <div class="validationPopup">
-      <img
-        id="validationImage"
-        src="https://www.flaticon.es/svg/vstatic/svg/753/753345.svg?token=exp=1614900090~hmac=1702a61fec7fa4d23040bdc1c7617bab"
-        alt=""
-      />
+      <img id="validationImage" src="" alt="" />
       <p id="resultvalid">prueba</p>
       <button class="aceptar-button" id="buttonAceptar">Cerrar</button>
     </div>
-                            <!--Pie-->
+    <!--Pie-->
     <footer>Creado por Alejandra Perez y Angelica Theran 2021 &copy;</footer>
-
     <script src="index.js" type="module"></script>
-
   </body>
 </html>

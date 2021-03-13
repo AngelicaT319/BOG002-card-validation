@@ -42,12 +42,12 @@ document.getElementById("card_name").addEventListener("keyup", (event) => {
 function showMessage(resultValidation) {
   const resultHTML = document.getElementById("resultvalid");
   if (resultValidation) {
-    document.querySelector("#validationImage").setAttribute("src", "https://www.flaticon.es/svg/vstatic/svg/753/753318.svg?token=exp=1614905694~hmac=de42b5765bcf742279e9aa16ca3bef76")
-    resultHTML.innerHTML = `¡Gracias por su Compra!`;
+    document.querySelector("#validationImage").setAttribute("src", "./img/valid_card.svg")
+    resultHTML.innerHTML = `<p style="margin:0px;text-align:center;font-size:18px;margin-top:10px;">Tarjeta valida</p><p style="margin:10px 0 20px 0;">¡Gracias por su compra!</p>`;
     blurEffect();  
   } else {
-      document.querySelector("#validationImage").setAttribute("src", "https://www.flaticon.es/svg/vstatic/svg/753/753345.svg?token=exp=1614900090~hmac=1702a61fec7fa4d23040bdc1c7617bab");
-      resultHTML.innerHTML = `Su tarjeta es invalida`;
+      document.querySelector("#validationImage").setAttribute("src", "./img/invalid_card.svg");
+      resultHTML.innerHTML = `<p style="margin:0px;text-align:center;">Tarjeta Invalida</p><p style="font-size:15px;">Por favor verifique el numero de su tarjeta</p>`
       blurEffect();      
   }
 }
