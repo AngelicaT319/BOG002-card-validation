@@ -1,9 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /* background-image: linear-gradient(-120deg, #025891bb, #731cbab9); */
-  
+  box-sizing: border-box;  
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -49,6 +47,7 @@ header {
   text-align: center;
   background-color: rgba(240, 248, 255, 0.726);
   width: 60%;
+  font-family: 'Archivo', sans-serif;
 }
 .why-membership h2{
   font-size: 26px;
@@ -69,6 +68,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px;
 }
 .membership-options .structure{
   display: flex;
@@ -82,39 +83,60 @@ header {
 .membership-options a button{
   cursor: pointer;
 }
-.membership-options .structure div{
-  margin-bottom: 20px;
-}
 .title-membership {
-  border: 1px solid black;
   text-align: center;
   width: 100%;
   height: 60px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
 }
 .title-membership.basic{
-  background-color: gray;
+  background-color: #6ba66c;
 }
 .title-membership.prm{
-  background-color: orangered;
+  background-color: rgb(255, 100, 44);
 }
 .title-membership h2{
   margin: 0;
   padding: 5px;
   color: white;
 }
+.price-basic , .price-prm{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-basic{
+  background-color: #2f9731;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+.price-prm{
+  background-color:orangered ;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
 .membership-options .structure button{
   height: 30px;
   width: 80px;
   border-radius:5px;
-  background-color: goldenrod;
+  background-color: #a19e12;
 }
 .basicMonth-membership , .basicYearly-membership{     
-  background-color: rgba(128, 128, 128, 0.808)
+  background-color: rgba(255, 255, 255, 0.733);
 }
 
 .premiumMonthly-membership, .premiumYearly-membership{
   background-color: rgba(255, 255, 255, 0.801);
+}
+ul{
+  padding-left: 25px;
+}
+.basicMonth-membership , .basicYearly-membership , .premiumMonthly-membership, .premiumYearly-membership ul li{
+  font-weight: bold;
 }
 .form-section {
   height: 612px;
@@ -134,20 +156,29 @@ header {
   border: 5px solid rgba(116, 113, 113, 0.021);
   border-radius: 10px;
   height: 500px;
-  width: 500px;
+  width: 730px;
   padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.822);
+  background-color: rgba(155, 155, 155, 0.822);
   box-shadow: -25px 28px 10px -1px rgba(0, 0, 0, 0.15);
   bottom: 0;
 }
-.subcontainer {
+.subcontainer{
+  display: flex;
+  justify-content: space-around;
+}
+.subcontainer_form {
   width: 370px;
   font-weight: 700;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
-.subcontainer div {
+.subcontainer_form div {
   width: 100%;
   margin-bottom: 25px;
 }
@@ -158,7 +189,7 @@ header {
 }
 
 .input_card-number {
-  width: 100%;
+  width: 90%;
   height: 35px;
   border: 1.5px solid rgba(134, 134, 134, 0.726);
   border-radius: 10px;
@@ -206,6 +237,11 @@ header {
 .valid-button:hover {
   background-color: #605375;
 }
+.final-pay{  
+  background-image: linear-gradient(-120deg, #025891ce, #731cbace);
+  width: 260px;
+  border-radius: 10px;
+}
 .card-plastic {
   box-sizing: border-box;
   background-image: url("https://i.pinimg.com/564x/76/9f/3a/769f3a0508d4fc0866f06b3a45162ac6.jpg");
@@ -216,6 +252,7 @@ header {
   height: 250px;
   position: absolute;
   top: 5px;
+  left: 280px;
   border-radius: 25px;
   padding: 30px;
   box-shadow: -10px 20px 10px -1px rgba(0, 0, 0, 0.486);
