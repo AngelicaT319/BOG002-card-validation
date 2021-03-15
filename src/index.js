@@ -43,7 +43,7 @@ function showMessage(resultValidation) {
   const resultHTML = document.getElementById("resultvalid");
   if (resultValidation) {
     document.querySelector("#validationImage").setAttribute("src", "./img/valid_card.svg")
-    resultHTML.innerHTML = `<p style="margin:0px;text-align:center;font-size:18px;margin-top:10px;">Tarjeta valida</p><p style="margin:10px 0 20px 0;">¡Gracias por su compra!</p>`;
+    resultHTML.innerHTML = `<p style="margin:0px;text-align:center;font-size:18px;margin-top:10px;">Tarjeta Valida, Pago Procesado</p><p style="margin:10px 0 20px 0;">¡Gracias por su compra!</p>`;
     blurEffect();  
   } else {
       document.querySelector("#validationImage").setAttribute("src", "./img/invalid_card.svg");
@@ -92,7 +92,17 @@ document.querySelector("#year-select").addEventListener("change",(event)=>{
 expireParrafo2.setAttribute("id","year-parrafo");
 expireDateContainer.appendChild(expireParrafo2);
 
+//Se agrega plan seleccionado del Home a la zona de Pago
 
+let selection = document.querySelectorAll('h2');
+console.log(selection);
+for (let i = 0; i < selection.length; i++ ){
+  selection[i].addEventListener("click", planSelected);
+}
 
+function planSelected(event){
+  let planSelect = event.target;
+  console.log(planSelect.parentElement);
+}
 
 /* console.log(validator); */
