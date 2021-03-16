@@ -21,12 +21,13 @@ El usuario requiere concluir la compra online de una membresia de "Lottora Anime
 
 ### Prototipo de Alta fidelidad
 
-![prototipoLQ](src\img\Desktop - 1.png "Alta Fidelidad")
+![prototipoHQ1](https://raw.githubusercontent.com/AngelitaT319/BOG002-card-validation/piloto/src/img/Desktop%20-%201.png "Prototipo 1 Alta Fidelidad")
 
 https://www.figma.com/file/7U0t2D18zjzqupsd4c8KeP/Untitled?node-id=1%3A2
 
 
-![final](https://user-images.githubusercontent.com/76055451/110785261-bcaa7800-8238-11eb-983c-f216d3a38db7.png)
+![FinalHQ1](https://raw.githubusercontent.com/AngelitaT319/BOG002-card-validation/piloto/src/img/PAltaFid.png "Web Final Home Alta Fidelidad")
+![FinalHQ2](https://raw.githubusercontent.com/AngelitaT319/BOG002-card-validation/piloto/src/img/PAltaFid2.png "Web final Index Alta Fidelidad")
 
 
 ## Construido con 🛠️
