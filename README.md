@@ -33,12 +33,6 @@ https://www.figma.com/file/7U0t2D18zjzqupsd4c8KeP/Untitled?node-id=1%3A2
 
 - Vanilla Javascript 
 
-
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
 ## Autores ✒️
 
 
