@@ -43,6 +43,6 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 
 - **Angelica Theran** - [AngelitaT319](https://github.com/AngelitaT319)
-- **Alejandra Pérez** - _Documentación_ - [aleperz](https://github.com/aleperz)
+- **Alejandra Pérez** - [aleperz](https://github.com/aleperz)
 
 
