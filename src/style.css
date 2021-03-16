@@ -251,8 +251,8 @@ ul{
   width: 420px;
   height: 250px;
   position: absolute;
-  top: 5px;
-  left: 280px;
+  top: 5px;/* 
+  left: 410px; */
   border-radius: 25px;
   padding: 30px;
   box-shadow: -10px 20px 10px -1px rgba(0, 0, 0, 0.486);
